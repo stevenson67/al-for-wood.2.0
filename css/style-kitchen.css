@@ -159,6 +159,10 @@ body {
     font-weight: 300;
     font-size: 14px;
     line-height: 19px;
+    color: rgba(0, 0, 0, 0.4);
+}
+
+.navigation__item:last-child {
     color: #000000;
 }
 

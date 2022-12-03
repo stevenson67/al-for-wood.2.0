@@ -81,6 +81,7 @@ body {
     border: 1px solid rgba(0, 0, 0, 0.2);
     border-radius: 120px;
     margin-top: auto;
+    background-color: #F8F9F7;
 }
 
 .btn-descr {
@@ -94,6 +95,10 @@ body {
     order: 1;
     flex-grow: 0;
     margin-top: 20px;
+}
+
+.btn-arrow-hidden {
+    display: none;
 }
 
 .borders__wrapper {
@@ -153,11 +158,16 @@ body {
 }
 
 .navigation__item {
+    display: flex;
     margin-right: 12px;
     padding-bottom: 8px;
     font-weight: 300;
     font-size: 14px;
     line-height: 19px;
+    color: rgba(0, 0, 0, 0.4);
+}
+
+.navigation__item:last-child {
     color: #000000;
 }
 
@@ -196,7 +206,7 @@ body {
     margin-top: 44px;
 }
 
-.product-item {
+.product-item:not(:nth-child(6)) {
     margin-bottom: 54px;
 }
 
@@ -231,6 +241,10 @@ body {
 
 /* portfolio */
 
+.portfolio {
+    margin-top: 100px;
+}
+
 .portfolio-title {
     font-weight: 500;
     font-size: 58px;
@@ -240,36 +254,47 @@ body {
 
 }
 
-.portfolio {
-    margin-top: 100px;
+.portfolio__content {
+    display: flex;
 }
 
-.portfolio__items {
-    flex-wrap: wrap;
+.portfolio__text {
+    display: flex;
+    align-content: space-between;
+    flex-direction: column;
+    width: 25%;
 }
 
-.portfolio__item-img {
+.portfolio__text-title {
+    margin: 0;
+    margin-bottom: auto;
+}
+
+.portfolio__slider {
+    width: 75%;
+    margin-left: auto;
+}
+
+.portfolio__slider-prev {
+    margin-right: 10px;
+}
+
+.portfolio__slider-prev img {
+    padding: 26px 30px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 50%;
+}
+
+.portfolio__slider-next img {
+    padding: 26px 30px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 50%;
+}
+
+.portfolio__slider-item-img {
     width: 100%;
 }
 
-.portfolio__item-num {
-    font-weight: 300;
-    font-size: 14px;
-    line-height: 19px;
-    color: #000000;
-    margin: 0;
-    margin-bottom: 10px;
-}
-
-.portfolio__item-descr {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 19px;
-    text-transform: uppercase;
-    color: #000000;
-    margin: 0;
-    margin-top: 10px;
-}
 
 /* news */
 
@@ -277,8 +302,21 @@ body {
     margin-top: 50px;
 }
 
+.news-up {
+    display: flex;
+    justify-content: space-between;
+}
+
 .news-img {
     width: 100%;
+}
+
+.news__slider-navigation {
+    padding-top: 25px;
+}
+
+.news__slider-arrow {
+    padding: 0 5px;
 }
 
 .news-title {
@@ -325,6 +363,10 @@ body {
     margin-top: 10px;
     width: 50%;
     padding: 0 10px;
+}
+
+.news__slider-navigation-mob {
+    display: none;
 }
 
 /* footer */ 

@@ -138,21 +138,6 @@ body {
     padding: 0px 10px;
 }
 
-
-/* head */
-
-.head-left {
-    width: 50%;
-}
-
-.head-right {
-    flex-direction: column;
-    align-content: space-between;
-    width: 50%;
-    height: 100vh;
-    padding: 0 50px;
-}
-
 /* header */
 
 .header-head {
@@ -161,110 +146,134 @@ body {
     padding: 44px 0 44px;
 }
 
+/* navigation */
 
-/* hero */
-
-.hero-img {
-    width: 100%;
-    height: 100vh;
+.navigation {
+    margin-top: 35px;
 }
 
-.hero-right-img {
-    display: none;
+/* navigation-left */
+
+.navigation-left {
+    width: 25%;
 }
 
-.hero-content {
-    flex-direction: column;
+.navigation__items {
+    flex-wrap: wrap;
+    padding-top: 12px;
 }
 
-.hero-center {
-    margin-top: auto;
-    margin-bottom: auto;
+.navigation__item {
+    margin-right: 12px;
+    padding-bottom: 8px;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 19px;
+    color: rgba(0, 0, 0, 0.4);
 }
 
-.hero-title {
+.navigation__item:last-child {
+    color: #000000;
+}
+
+.navigation__item-link {
+    padding-right: 12px;
+}
+
+/* navigation-center */
+
+.navigation-center {
+    width: 25%;
+}
+
+.navigation-title {
     font-weight: 500;
-    font-size: 50px;
-    line-height: 60px;
+    font-size: 58px;
+    line-height: 69px;
     text-transform: uppercase;
     color: #000000;
     margin: 0;
-    padding: 0 50px;
 }
 
-.hero-footer-left {
-    align-items: flex-end;
+/* history */
+
+.history {
+    margin-top: 100px;
+    margin-bottom: 100px;
 }
 
-.hero-descr {
+.history__text {
+    display: flex;
+}
+
+.history__text-left {
+    width: 25%;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 33px;
+    color: #000000;
+}
+
+.history__text-right {
+    width: 25%;
+    margin-left: auto;
     font-weight: 300;
     font-size: 14px;
     line-height: 19px;
     color: #000000;
-    opacity: 0.4;
-    margin: 0;
+} 
+
+.history-img {
+    width: 100%;
 }
 
-.hero-footer {
-    justify-content: space-between;
-    padding-bottom: 20px;
-}
+/* benefits */
 
-/* products */
-
-.products-contents {
-    padding-top: 180px;
-}
-
-.products-left {
-    width: 25%;
-    flex-direction: column;
-}
-
-.products-title {
+.benefits-title {
     font-weight: 500;
-    font-size: 40px;
-    line-height: 60px;
+    font-size: 58px;
+    line-height: 69px;
     text-transform: uppercase;
     color: #000000;
     margin: 0;
-    margin: 0 0 3rem 0;
+    margin-bottom: 50px;
 }
 
-.products-btn-link {
-    margin-top: auto;
+.benefits__block-left, .benefits__block-right {
+    margin-bottom: 80px;
 }
 
-.products-center {
-    width: 25%;
-    align-content: space-between;
-    flex-direction: column;
+.benefits__block-right-text {
+    order: -1;
 }
 
-.products-descr {
+.benefits__block-left-image, .benefits__block-right-image {
+    width: 75%;
+}
+
+.benefits__block-img {
+    width: 100%;
+}
+
+.benefits__block-title {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    text-transform: uppercase;
+    color: #000000;
+    margin: 0;
+    margin-bottom: 16px;
+}
+
+.benefits__block-descr {
     font-weight: 300;
     font-size: 14px;
     line-height: 19px;
     color: #000000;
-    opacity: 0.4;
     margin: 0;
-    padding-top: 5px;
 }
 
-.products-center-img {
-    margin-top: auto;
-    object-fit: cover;
-}
 
-#products-right {
-    width: 50%;
-}
-
-.products-right-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
 
 /* footer */
 
